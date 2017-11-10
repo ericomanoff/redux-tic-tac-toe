@@ -1,16 +1,8 @@
 import React from 'react'
 
 
-const Box = ({ onClick, selected, id }) => (
-    <button
-        className="button"
-        onClick={onClick}
-        style={{
-            backgroundColor: selected ? 'grey' : 'blue'
-        }}
-    >
-        {id}
-    </button>
+const Box = ({onClick, id, selected}) => (
+    <button  key={id} className="button" onClick={onClick}> {selected}</button>
 )
 
 

@@ -1,7 +1,6 @@
-export const selectBox = (event, team) => {
+export const select_square_action = (id) => {
     return {
-        type: 'SELECT_BOX',
-        team: team,
-        id: event.target.value
+        type: 'SELECT_SQUARE',
+        payload: id
     }
 }

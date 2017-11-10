@@ -1,26 +1,35 @@
 import React from 'react'
-import Box from '../components/box'
-import { connect } from 'react-redux'
-import { selectBox } from '../actions/index'
+import Box from "../components/box"
+import select_square from "../reducers/select_square"
+import {select_square_action} from "../actions/index"
+import connect from 'react-redux'
 
 
-const GameBoard = () => {
-        return(
-            <div className="game-board">
-                <Box />
-                <Box />
-                <Box />
+const GameBoard = ({boxes, onBoxClick}) => (
+    <div className="game-board">
+        {boxes.map( box => (
+            <Box {...box} onClick={onBoxClick}/>
+        ))}
+    </div>
+)
 
-                <Box />
-                <Box />
-                <Box />
-
-                <Box />
-                <Box />
-                <Box />
-            </div>
-        )
-
+const mapStateToProps = () => {
+    return {
+        boxes: select_square
+    }
 }
 
-export default GameBoard
+const mapDispatchToProps = dispatch => {
+    return {
+        onBoxClick: id => {
+            dispatch(select_square_action(id))
+        }
+    }
+}
+
+const ReduxedGameBoard = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(GameBoard)
+
+export default ReduxedGameBoard
