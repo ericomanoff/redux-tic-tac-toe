@@ -1,12 +1,45 @@
-const select_square = (current_state, action) => {
-    switch(action.type){
-        case 'SELECT_SQUARE':
-            return current_state.map( box =>
-                (box.id == action.id) ? { ...box, selected:true, team:action.team } : box
-             )
-        default:
-            return current_state
+
+
+
+const select_square = () => {
+    return([
+     {
+        id: 1,
+        team: 'x'
+    },
+    {
+        id: 2,
+        team: 'o'
+    },
+    {
+        id: 3,
+        team: 'x'
+    },
+    {
+        id: 4,
+        team: 'o'
+    },
+    {
+        id: 5,
+        team: 'x'
+    },
+    {
+        id: 6,
+        team: 'o'
+    },
+    {
+        id: 7,
+        team: 'o'
+    },
+    {
+        id: 8,
+        team: 'x'
+    },
+    {
+        id: 9,
+        team: 'o'
     }
+    ])
 }
 
 export default select_square

@@ -1,8 +1,8 @@
 import React from 'react'
 
 
-const Box = ({onClick, id, selected}) => (
-    <button  key={id} className="button" onClick={onClick}> {selected}</button>
+const Box = ({id}) => (
+    <button> {id} </button>
 )
 
 

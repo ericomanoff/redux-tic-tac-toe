@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import GameBoard from './containers/gameboard'
+import ConnectedGameBoard from './containers/gameboard'
 
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Tic Tac Toe with Redux</h1>
         </header>
-          <GameBoard/>
+          <ConnectedGameBoard />
       </div>
     );
   }
