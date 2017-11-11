@@ -8,7 +8,7 @@ const GameBoard = ({board}) => {
         return(
         <div className="game-board">
             {board.map(square => {
-                    return <Box key={square.id} id={square.id}/>
+                    return <Box key={square.id} team={square.team} id={square.id}/>
             })}
         </div>
         )

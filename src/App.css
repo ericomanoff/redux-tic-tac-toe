@@ -38,3 +38,15 @@ button{
   width: 200px;
   height: 200px;
 }
+
+.x{
+  background-color: aqua;
+}
+
+.o{
+  background-color: blueviolet;
+}
+
+.u{
+  background-color: aliceblue;
+}

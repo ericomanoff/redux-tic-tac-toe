@@ -21,11 +21,11 @@ const select_square = () => {
     },
     {
         id: 5,
-        team: 'x'
+        team: 'u'
     },
     {
         id: 6,
-        team: 'o'
+        team: 'u'
     },
     {
         id: 7,
@@ -33,7 +33,7 @@ const select_square = () => {
     },
     {
         id: 8,
-        team: 'x'
+        team: 'u'
     },
     {
         id: 9,
