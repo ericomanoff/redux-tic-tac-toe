@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './redux_logo.png';
 import './App.css';
 import ConnectedGameBoard from './containers/connected_gameboard'
 
@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Tic Tac Toe with Redux</h1>
+          <h1 className="App-title">Tic Tac Toe with Redux</h1>
         </header>
           <ConnectedGameBoard />
       </div>

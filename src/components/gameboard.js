@@ -25,10 +25,13 @@ class GameBoard extends Component {
     render(){
         return(
             <div className="game-board">
+
                 {this.props.board.map(square => {
                     return <Box onClick={() => this.handleClick(square.id)} key={square.id} team={square.team} id={square.id}/>
                 })}
+                <h1>Current Turn: {this.state.turn}</h1>
             </div>
+
         )
     }
 
