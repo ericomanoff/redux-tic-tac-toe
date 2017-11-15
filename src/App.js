@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ConnectedGameBoard from './containers/gameboard'
+import ConnectedGameBoard from './containers/connected_gameboard'
 
 
 class App extends Component {

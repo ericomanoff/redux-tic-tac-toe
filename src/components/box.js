@@ -1,9 +1,11 @@
 import React from 'react'
 
 
-const Box = ({team,id}) => (
-    <button className={team}> {id} </button>
-)
+const Box = ({ onClick, team, id}) => {
+    return(
+        <button onClick={onClick} className={team}> {team} </button>
+    )
+}
 
 
 export default Box
