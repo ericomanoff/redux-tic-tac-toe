@@ -30,14 +30,14 @@
 .game-board{
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
   margin: 0 auto;
+  width: 300px;
 }
 
 button{
   font-size: 60px;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 .x{
