@@ -37,15 +37,18 @@
 button{
   font-size: 60px;
   width: 100px;
-  height: 100px;
+  height: 140px;
 }
 
 .x{
   background-color: aqua;
+  background-image: url(grehg.png);
 }
 
 .o{
   background-color: blueviolet;
+  background-image: url(austin.png);
+
 }
 
 .u{
